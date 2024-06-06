@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.photos img {
+    width: 32%;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info .item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    flex: 0 0 32%;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.info .item h2 {
+    margin-top: 0;
+}
+
+.awards {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+.awards h2 {
+    margin-top: 0;
+}
+
+.award-item {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .photos img, .info .item {
+        flex: 0 0 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .photos img, .info .item {
+        flex: 0 0 100%;
+    }
+}
